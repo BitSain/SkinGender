@@ -23,6 +23,10 @@ For more details, see [LICENSE.md](LICENSE.md).
 #define FEMALE_GENDER_TEXT "Female"
 #define INVALID_GENDER_TEXT "Unknown"
 ```
+4. If you don't want to use y_hooks, use this before the inclusion:
+```pawn
+#define SKG_NO_Y_HOOKS
+```
 
 ## Functions
 - **IsMaleSkinID(skinid)**: Returns `true` if the skin is male.
@@ -32,11 +36,11 @@ For more details, see [LICENSE.md](LICENSE.md).
 ## Example
 ```pawn
 if (IsMaleSkinID(10)) {
-    printf("Skin 10 is male.");
+    printf("Skin 22 is male.");
 } else if (IsFemaleSkinID(10)) {
-    printf("Skin 10 is female.");
+    printf("Skin 9 is female.");
 } else {
-    printf("Skin 10 is invalid.");
+    printf("Skin 555 is invalid.");
 }
 
 printf("Skin 10 gender: %s", GetSkinGenderText(10));
@@ -45,7 +49,7 @@ printf("Skin 10 gender: %s", GetSkinGenderText(10));
 ## Credit
 - **Author**: BitSain (Leonardo)  
 - **Contact**: bitsaindeveloper@gmail.com  
-- **Project**: [https://github.com/BitSain/SkinGender](https://github.com/BitSain/SkinGender)
+- **Project**: [Link](https://github.com/BitSain/SkinGender)
 
 ## License
 This project is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.  
