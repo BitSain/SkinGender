@@ -7,10 +7,6 @@ Optimized system to identify skin gender (male/female) in SA-MP with **O(1)** ti
 - Works in both **gamemodes** and **filterscripts**.
 - Validates skin IDs to prevent errors.
 
-## License
-This project is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.  
-For more details, see [LICENSE.md](LICENSE.md).
-
 ## Installation
 1. Place `SkinGender.inc` in the `includes` folder.
 2. Include it in your script:
@@ -53,4 +49,4 @@ printf("Skin 10 gender: %s", GetSkinGenderText(10));
 
 ## License
 This project is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.  
-For more details, visit [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+For more details, visit [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) / [LICENSE](LICENCE.md).
