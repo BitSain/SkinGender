@@ -30,6 +30,7 @@ Optimized system to identify skin gender (male/female) in SA-MP with **O(1)** ti
 - **IsMaleSkinID(skinid)**: Returns `true` if the skin is male.
 - **IsFemaleSkinID(skinid)**: Returns `true` if the skin is female.
 - **GetSkinGenderText(skinid)**: Returns gender text (`"male"`, `"female"`, or `"invalid"`).
+- **IsValidSkinID(skinid)**: Returns `true` if the skin is valid.
 
 ## Example
 ```pawn
