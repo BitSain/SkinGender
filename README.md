@@ -18,10 +18,12 @@ Optimized system to identify skin gender (male/female) in SA-MP with **O(1)** ti
 #define MALE_GENDER_TEXT "Male"
 #define FEMALE_GENDER_TEXT "Female"
 #define INVALID_GENDER_TEXT "Unknown"
+#include <SkinGender>
 ```
 4. If you don't want to use y_hooks, use this before the inclusion:
 ```pawn
 #define SKG_NO_Y_HOOKS
+#include <SkinGender>
 ```
 
 ## Functions
