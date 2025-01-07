@@ -47,11 +47,11 @@
  *
  * Example Usage:
  * ```
- *		if(IsMaleSkinID(10)) {
+ *		if(IsMaleSkinID(22)) {
  *     		printf("Skin 22 is male.");
- * 		} else if (IsFemaleSkinID(10)) {
+ * 		} else if(IsFemaleSkinID(9)) {
  *     		printf("Skin 9 is female.");
- * 		} else {
+ * 		} else if(!IsValidSkinID(555)) {
  *     		printf("Skin 555 is invalid.");
  * 		}
  *
