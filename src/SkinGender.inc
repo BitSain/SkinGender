@@ -61,6 +61,11 @@
  * Version: 1.0.0
  */
 
+#if defined _INC_SKIN_GENDER
+    #endinput
+#endif
+#define _INC_SKIN_GENDER
+
 // Protection of Author and License
 #define AUTHOR "BitSain (Leonardo)"
 #define LICENSE "CC BY-SA 4.0 International - See the LICENSE file for full details"
@@ -69,11 +74,6 @@
 #if !defined AUTHOR
     #error "This code must include the author's name and license."
 #endif
-
-#if defined _INC_SKIN_GENDER
-    #endinput
-#endif
-#define _INC_SKIN_GENDER
 
 // Importing necessary dependencies
 #tryinclude <open.mp>
@@ -176,8 +176,9 @@ stock bool:IsFemaleSkinID(skinid) {
 
 // Function to return gender as text
 stock GetSkinGenderText(skinid) {
-    if(!IsValidSkinID(skinid)) return INVALID_GENDER_TEXT;
-    return (GenderArray[skinid] ? MALE_GENDER_TEXT : FEMALE_GENDER_TEXT);
+	new __gender[64]; format(__gender, 64, !IsValidSkinID(skinid) ? INVALID_GENDER_TEXT : 
+		GenderArray[skinid] ? MALE_GENDER_TEXT : FEMALE_GENDER_TEXT);
+    return __gender;
 }
 
 // ALS
